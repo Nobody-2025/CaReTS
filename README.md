@@ -1,0 +1,2 @@
+# CaReTS-A-Multi-Task-Framework-Unifying-Classification-and-Regression-for-Time-Series-Forecasting
+Implementation of CaReTS, a multi-task framework for multi-step time series forecasting. It uses a dual-stream design: classification for future trends and regression for deviations, improving accuracy and interpretability. Includes four variants (CaReTS1–4) compatible with CNN, LSTM, and Transformer encoders.

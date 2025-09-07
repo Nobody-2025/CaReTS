@@ -6,9 +6,9 @@ This repository contains the official implementation of the manuscript (submitte
 
 We propose CaReTS, a novel multi-task learning framework for multi-step time series forecasting. The framework jointly models classification and regression tasks through a dual-stream architecture:
 
-    1) Classification branch: captures step-wise future trends;
+1) Classification branch: captures step-wise future trends;
 
-    2) Regression branch: estimates deviations from the latest target observation.
+2) Regression branch: estimates deviations from the latest target observation.
 
 This design disentangles macro-level trends and micro-level deviations, resulting in more interpretable predictions. To achieve effective joint learning, we introduce a multi-task loss with uncertainty-aware weighting, balancing the contributions of different tasks adaptively. Four model variants (CaReTS1–4) are developed under this framework, supporting mainstream temporal modeling encoders: CNNs, LSTMs, and Transformers. Experiments on multiple real-world datasets demonstrate that CaReTS outperforms SOTA algorithms in forecasting accuracy and trend classification.
 
@@ -39,6 +39,7 @@ By default, the encoder is LSTM. To switch to CNN or Transformer, modify:
 2. Dataset Setup
 
 By default, the dataset is unmet power. To switch to electricity price dataset, modify:
+
     def load_data_new:
         ...
         X_data_train = pd.read_csv('/content/drive/MyDrive/LSTM_comparison/Chaotic_data/unmets_HWM_train.csv') # Change to "prs_HWM_train.csv"
@@ -55,12 +56,12 @@ By default, the forecasting mode is 15-input-6-output. To change input-output ra
 
 We thank the following contributors for making their codes available:
 
-    1) SOTA baselines (8 models: Autoformer, FEDformer, Non-stationary, TimesNet, Dlinear, Nlinear, TimeXer, TimeMixer) 👉 [wuhaixu2016]  https://github.com/thuml/Time-Series-Library
+1) SOTA baselines (8 models: Autoformer, FEDformer, Non-stationary, TimesNet, Dlinear, Nlinear, TimeXer, TimeMixer) 👉 [wuhaixu2016]  https://github.com/thuml/Time-Series-Library
 
 
-    2) SOTA baselines (2 models: SOIT2FNN-MO, D-CNN-LSTM) 👉 [FLYao123] https://github.com/FLYao123/A_Self-organizing_Interval_Type-2_Fuzzy_Neural_Network
+2) SOTA baselines (2 models: SOIT2FNN-MO, D-CNN-LSTM) 👉 [FLYao123] https://github.com/FLYao123/A_Self-organizing_Interval_Type-2_Fuzzy_Neural_Network
 
-    3) We also express our sincere appreciation to the authors of these 10 algorithms. 🙏
+3) We also express our sincere appreciation to the authors of these 10 algorithms. 🙏
 
 📢 Notes
 

@@ -1,4 +1,5 @@
 CARETS: A Multi-Task Framework for Time Series Forecasting
+
 📖 Introduction
 
 This repository contains the official implementation of the paper:
@@ -76,11 +77,11 @@ Input/output length: adjust parameters in load_data_new.
 
 We thank the following contributors for making their codes available:
 
-SOTA baselines (8 models): wuhaixu2016 https://github.com/thuml/Time-Series-Library
+SOTA baselines (8 models): wuhaixu2016 👉 https://github.com/thuml/Time-Series-Library
 
 (Autoformer, FEDformer, Non-stationary, TimesNet, Dlinear, Nlinear, TimeXer, TimeMixer)
 
-SOTA baselines (2 models): FLYao123 https://github.com/FLYao123/A_Self-organizing_Interval_Type-2_Fuzzy_Neural_Network
+SOTA baselines (2 models): FLYao123 👉 https://github.com/FLYao123/A_Self-organizing_Interval_Type-2_Fuzzy_Neural_Network
 
 (SOIT2FNN-MO, D-CNN-LSTM)
 

@@ -30,9 +30,9 @@ Evaluation metrics: MSE, RMSE, trend accuracy, and average runtime per fold.
 
 1. Encoder Setup
 
-By default, the encoder is LSTM. To switch to CNN or Transformer, modify:
+By default, the encoder is LSTM. To switch to CNN or Transformer, e.g., modify:
 
-    Class RegressionDualBranchModel(nn.Module)::
+    Class RegressionDualBranchModel(nn.Module):
         def __init__(self, input_dim=1, hidden_dim=64, num_layers=2, output_len=6, model_type='LSTM'):# Change to "CNN" or "TRANSFORMER"
         ...
         
@@ -49,8 +49,12 @@ By default, the dataset is unmet power. To switch to electricity price dataset, 
 
 3. Dataset & Input/Output Setup
 
-By default, the forecasting mode is 15-input-6-output. To change input-output ratio: adjust settings when loading the training and test sets in load_data_new method. During training, the model automatically detects the input and output lengths.
-
+By default, the forecasting mode is 15-input-6-output. To change input-output ratio: adjust settings when loading the training and test sets in load_data_new method. If you modify the output length, please remember to also update the output_len parameter in RegressionDualBranchModel(nn.Module), for example::
+    
+    Class RegressionDualBranchModel(nn.Module):
+        def __init__(self, input_dim=1, hidden_dim=64, num_layers=2, output_len=6, model_type='LSTM'):# Change '6' to '4' or '8'
+        ...
+During training, the model automatically detects the input length, so no further modification is required.
 
 🔗 References & Acknowledgements
 

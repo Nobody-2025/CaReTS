@@ -20,7 +20,7 @@ Experiments on multiple real-world datasets demonstrate that CaReTS outperforms 
 To ensure reproducibility, this repository provides preprocessed datasets used in the paper.
 
 Original datasets can be found here:
-👉 District Microgrid Dataset
+👉 [District Microgrid Dataset](https://github.com/FLYao123/District)
 
 Default dataset: unmet power
 
@@ -76,18 +76,18 @@ Input/output length: adjust parameters in load_data_new.
 
 We thank the following contributors for making their codes available:
 
-SOTA baselines (8 models): wuhaixu2016
+SOTA baselines (8 models): wuhaixu2016 https://github.com/thuml/Time-Series-Library
 
 (Autoformer, FEDformer, Non-stationary, TimesNet, Dlinear, Nlinear, TimeXer, TimeMixer)
 
-SOTA baselines (2 models): FLYao123
+SOTA baselines (2 models): FLYao123 https://github.com/FLYao123/A_Self-organizing_Interval_Type-2_Fuzzy_Neural_Network
 
 (SOIT2FNN-MO, D-CNN-LSTM)
 
-We express our sincere appreciation to the authors of these 10 algorithms. 🙏
+We also express our sincere appreciation to the authors of these 10 algorithms. 🙏
 
 📢 Notes
 
-During the peer-review stage, the authors will not provide contact information or reply to issues related to this code.
+During the double-blind peer-review stage, the authors will not provide contact information or reply to issues related to this code.
 
 After official acceptance, we will update with personal contact details for academic discussion.

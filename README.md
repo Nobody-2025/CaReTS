@@ -49,7 +49,7 @@ By default, the dataset is unmet power. To switch to electricity price dataset, 
 
 3. Dataset & Input/Output Setup
 
-By default, the forecasting mode is 15-input-6-output. To change input-output ratio: adjust settings when loading the training and test sets in load_data_new method.
+By default, the forecasting mode is 15-input-6-output. To change input-output ratio: adjust settings when loading the training and test sets in load_data_new method. During training, the model automatically detects the input and output lengths.
 
 
 🔗 References & Acknowledgements

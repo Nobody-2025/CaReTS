@@ -20,7 +20,7 @@ Original datasets can be found here: 👉  [FLYao123] https://github.com/FLYao12
 
 💻 Code Structure
 
-This repository provides: CaReTS1–4 (our proposed models) and Baseline1–3 (newly designed baselines). Each model has its own file. Please update absolute paths in the scripts before running.
+This repository provides: CaReTS1–4 (our proposed models) and Baseline1–3 (newly designed baselines). Each model has its own file. 📢 Please update the absolute paths in the scripts before running.
 
 Code outputs include: 1) N-fold cross-validation results; 2) Performance on train/validation/test sets.
 

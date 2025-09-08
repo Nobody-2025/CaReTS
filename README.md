@@ -30,15 +30,15 @@ Evaluation metrics: MSE, RMSE, trend accuracy, and average runtime per fold.
 
 1. Encoder Setup
 
-By default, the encoder is LSTM. To switch to CNN or Transformer, e.g., modify:
+The encoder can be implemented as LSTM, CNN, or Transformer. To switch between them, e.g., modify:
 
     Class RegressionDualBranchModel(nn.Module):
         def __init__(self, input_dim=1, hidden_dim=64, num_layers=2, output_len=6, model_type='LSTM'):# Change to "CNN" or "TRANSFORMER"
         ...
-        
+
 2. Dataset Setup
 
-By default, the dataset is unmet power. To switch to electricity price dataset, modify:
+The dataset can be set to unmet power or electricity price. For example, to switch to the electricity price dataset, modify:
 
     def load_data_new:
         ...

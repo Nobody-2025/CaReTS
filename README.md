@@ -47,7 +47,7 @@ The dataset can be set to unmet power or electricity price. For example, to swit
         ...
 
 
-3. Dataset & Input/Output Setup
+3. Input/Output Setup
 
 By default, the forecasting mode is 15-input-6-output. To change input-output ratio: adjust settings when loading the training and test sets in load_data_new method. If you modify the output length, please remember to also update the output_len parameter in RegressionDualBranchModel(nn.Module), for example::
     
